@@ -1,0 +1,19 @@
+play_favorite:
+  name: Play Favorite (Room)
+  description: Play a favorite in a room by its favId
+  fields:
+    entity_id:
+      name: Media Player Entity
+      description: veoovibes media_player entity for the room
+      required: true
+      selector:
+        entity:
+          domain: media_player
+          integration: veoovibes
+    fav_id:
+      name: Favorite ID
+      description: The favId string from listFavorites
+      required: true
+      example: 4511radiolocal
+      selector:
+        text:
